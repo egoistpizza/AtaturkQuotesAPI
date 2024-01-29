@@ -18,8 +18,9 @@ The primary goal of this application is to leverage the rich and diverse Ataturk
 
 To access a random quote in your desired language, make a GET request to the following endpoint:
 
-\bash
+```bash
 http://3.147.64.168/{language-code}
+```
 
 Replace `{language-code}` with the appropriate language code, such as `tr` for Turkish or `en` for English.
 
