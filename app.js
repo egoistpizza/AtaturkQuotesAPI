@@ -8,19 +8,21 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.use(cors());
 
+const DATA_PATH = './data/';
+
 // Databases for different languages
 const databases = {
-  tr: new sqlite3.Database('./data/TR_AtaturkQuotes.db'),
-  de: new sqlite3.Database('./data/DE_AtaturkQuotes.db'),
-  en: new sqlite3.Database('./data/EN_AtaturkQuotes.db'),
-  es: new sqlite3.Database('./data/ES_AtaturkQuotes.db'),
-  fr: new sqlite3.Database('./data/FR_AtaturkQuotes.db'),
-  it: new sqlite3.Database('./data/IT_AtaturkQuotes.db'),
-  ja: new sqlite3.Database('./data/JA_AtaturkQuotes.db'),
-  ko: new sqlite3.Database('./data/KO_AtaturkQuotes.db'),
-  pl: new sqlite3.Database('./data/PL_AtaturkQuotes.db'),
-  ru: new sqlite3.Database('./data/RU_AtaturkQuotes.db'),
-  zh: new sqlite3.Database('./data/ZH_AtaturkQuotes.db'),
+  tr: new sqlite3.Database(DATA_PATH + 'TR_AtaturkQuotes.db'),
+  de: new sqlite3.Database(DATA_PATH + 'DE_AtaturkQuotes.db'),
+  en: new sqlite3.Database(DATA_PATH + 'EN_AtaturkQuotes.db'),
+  es: new sqlite3.Database(DATA_PATH + 'ES_AtaturkQuotes.db'),
+  fr: new sqlite3.Database(DATA_PATH + 'FR_AtaturkQuotes.db'),
+  it: new sqlite3.Database(DATA_PATH + 'IT_AtaturkQuotes.db'),
+  ja: new sqlite3.Database(DATA_PATH + 'JA_AtaturkQuotes.db'),
+  ko: new sqlite3.Database(DATA_PATH + 'KO_AtaturkQuotes.db'),
+  pl: new sqlite3.Database(DATA_PATH + 'PL_AtaturkQuotes.db'),
+  ru: new sqlite3.Database(DATA_PATH + 'RU_AtaturkQuotes.db'),
+  zh: new sqlite3.Database(DATA_PATH + 'ZH_AtaturkQuotes.db'),
 };
 
 // Helper function to get the database based on language code
