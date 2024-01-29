@@ -28,7 +28,7 @@ const getDatabase = (lang) => databases[lang] || null;
 
 // Endpoint for the root URL (GET /)
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/page/index.html');
+  return res.status(404).json({ error: 'Please specify the language code.' });
 });
 
 // Endpoint to get a random quote for a specific language
