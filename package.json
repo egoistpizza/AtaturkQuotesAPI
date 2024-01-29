@@ -1,0 +1,38 @@
+{
+  "name": "ataturkquotesapi",
+  "version": "1.0.0",
+  "description": "API for retrieving and sending Ataturk Quotes.",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egoistpizza/AtaturkQuotesAPI.git"
+  },
+  "keywords": [
+    "quotes",
+    "quote",
+    "express",
+    "express.js",
+    "ataturk",
+    "api"
+  ],
+  "author": "egoistpizza",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/egoistpizza/AtaturkQuotesAPI/issues"
+  },
+  "homepage": "https://github.com/egoistpizza/AtaturkQuotesAPI#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "private": false
+}
