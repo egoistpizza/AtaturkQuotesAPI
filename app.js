@@ -1,3 +1,5 @@
+// Express uygulamasının güncellenmiş hali
+
 const express = require('express');
 const sqlite3 = require('sqlite3');
 const cors = require('cors');
@@ -23,6 +25,11 @@ const databases = {
 
 // Helper function to get the database based on language code
 const getDatabase = (lang) => databases[lang] || null;
+
+// Endpoint for the root URL (GET /)
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/page/index.html');
+});
 
 // Endpoint to get a random quote for a specific language
 app.get('/:lang', (req, res) => {
